@@ -25,6 +25,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Divider
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -172,33 +173,41 @@ fun Icons() {
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Image(
-            painter = painterResource(id = R.drawable.upload),
-            contentDescription = null,
-            modifier = Modifier
-                .size(20.dp),
-            contentScale = ContentScale.Inside
-        )
 
-        Spacer(modifier = Modifier.width(24.dp))
+        IconButton(onClick = { /*TODO*/ }) {
+            Image(
+                painter = painterResource(id = R.drawable.upload),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(20.dp),
+                contentScale = ContentScale.Inside
+            )
+        }
 
-        Image(
-            painter = painterResource(id = R.drawable.like),
-            contentDescription = null,
-            modifier = Modifier
-                .size(20.dp),
-            contentScale = ContentScale.Inside
-        )
 
-        Spacer(modifier = Modifier.width(24.dp))
+        Spacer(modifier = Modifier.width(12.dp))
 
-        Image(
-            painter = painterResource(id = R.drawable.bookmark),
-            contentDescription = null,
-            modifier = Modifier
-                .size(20.dp),
-            contentScale = ContentScale.Inside
-        )
+        IconButton(onClick = { /*TODO*/ }) {
+            Image(
+                painter = painterResource(id = R.drawable.like),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(20.dp),
+                contentScale = ContentScale.Inside
+            )
+        }
+
+        Spacer(modifier = Modifier.width(12.dp))
+
+        IconButton(onClick = { /*TODO*/ }) {
+            Image(
+                painter = painterResource(id = R.drawable.bookmark),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(20.dp),
+                contentScale = ContentScale.Inside
+            )
+        }
     }
 }
 
