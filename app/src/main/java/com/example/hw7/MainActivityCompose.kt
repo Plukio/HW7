@@ -251,7 +251,7 @@ fun StatsSection() {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(0.dp, 16.dp, 0.dp, 16.dp),
+            .padding(12.dp, 16.dp, 12.dp, 16.dp),
         horizontalArrangement = Arrangement.SpaceAround,
         verticalAlignment = Alignment.CenterVertically
     ) {
